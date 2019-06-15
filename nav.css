@@ -1,0 +1,35 @@
+* {
+    /* border: 1px solid black; */
+    padding: 0;
+    margin: 0;
+    font-family: 新細明體;
+}
+.nav ul {
+    float: right;
+}
+
+.nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 15px 20px;
+}
+
+.nav a {
+    color: #757575;
+    text-decoration: none;
+}
+.nav a:hover {
+    color: gold;
+}
+
+.nav .logo {
+    font-size: 30pt;
+}
+
+.nav ul li a .red,.nav .red {
+    color: red;
+}
+
+.strong {
+    font-weight: 900;
+}
