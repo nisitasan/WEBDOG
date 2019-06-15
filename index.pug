@@ -4,14 +4,15 @@ mixin ArticleBox(title, content, button, imgName)
             h1=title
             p=content
             a(href="#")=button
-    .picture
-            img(src="imgName", alt="dog")
+        .picture
+            img(src=imgName, alt="dog")
 <!DOCTYPE html>
 html(lang="zh")
     head
         meta(charset="UTF-8")
         title DogLife.
+        link(rel="stylesheet", href="index.css")
     body 
-        include nav.pug
-
-        +ArticleBox("標題","內容","按鈕","dog1.jpg")
+        .main
+            include nav.pug
+            +ArticleBox("標題","內容","按鈕","dog1.jpg")
