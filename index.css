@@ -1,11 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 24px;
+}
+
 .main {
     width: 80%;
     margin: 0 auto;
 }
+.box h1 {
+    font-size: 2em;
+}
+
+.box p {
+    font-size: 1em;
+}
+
+.box .content a {
+    font-size: 0.5em;
+}
 .box {
     display: grid;
     grid-template-columns: 50% 50%;
+    grid-gap: 10px 0;
+    margin: 60px 0;
 }
+
 .box .picture img {
     width: 100%;
 }
@@ -21,4 +43,97 @@
 .box .content {
     margin-top: 200px;
     text-align: center;
+}
+.priceBox h1,.priceBox h2, .priceBox img, ul, a {
+    margin-top: 70px;
+}
+.priceBox a {
+
+}
+.priceBox .basic ul li:nth-child(n+3), .priceBox .advanced ul li:nth-child(n+5) {
+    text-decoration: line-through;
+    color: #999;
+}
+.priceBox ul li {
+    list-style-image: url(check.png);
+    list-style-position: inside;
+}
+
+.priceBox {
+    background-color: rgba(255, 187, 0, 0.829);
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.priceBox .advanced {
+    background-color: orange;
+}
+
+/*按鈕*/
+.button {
+    display: inline-block;
+    background-color: skyblue;
+    width: 120px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 60px;
+    color: white;
+    text-decoration: none;
+}
+
+.button a:hover {
+    background-color: #333;
+}
+
+.priceBox .content {
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+    margin: 50px auto;
+}
+/*form*/
+.gray {
+    background-color: #eee;
+}
+
+.contact {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.contact input {
+    width: 100%;
+    padding: 10px 0;
+}
+.contact label {
+    display: block;
+    margin: 10px 0; 
+}
+.contact textarea {
+    width: 100%;
+}
+.contact input[type="submit"] {
+    width: 120px;
+    padding: 0;
+    margin: 30px 0;
+}
+.contact .text {
+    padding: 0 30px;
+}
+.footer {
+    width: 100%;
+    background-color: gray;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.footer .content, .link, .share {
+    margin: 100px auto 100px;
 }
