@@ -137,3 +137,18 @@ body {
 .footer .content, .link, .share {
     margin: 100px auto 100px;
 }
+
+/*手機*/
+@media screen and (max-width:767px) {
+    .box {
+        grid-template-columns: 100%;
+    }
+    .box .picture img {
+        text-align: center;
+    }
+}
+
+/*平板*/
+@media screen and (max-width:1023px and min-width:768px) {
+
+}
